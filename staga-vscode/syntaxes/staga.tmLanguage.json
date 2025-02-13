@@ -1,0 +1,51 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Staga",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.other.staga",
+					"match": "\\b(if|else|while|for|print|done|end|swap|meml|mems|dup|macro|mend|pop)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.staga",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.staga",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.odin",
+					"begin": "//",
+					"end": "\n"
+				},
+				{
+					"name": "comment.line.double-slash.odin",
+					"begin": "#",
+					"end": "\n"
+				}
+			]
+		}
+	},
+	"scopeName": "source.staga"
+}

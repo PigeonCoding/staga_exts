@@ -1,0 +1,34 @@
+{
+  "name": "staga",
+  "displayName": "staga",
+  "description": "syntax highlighting for the staga language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "staga",
+        "aliases": [
+          "Staga",
+          "staga"
+        ],
+        "extensions": [
+          ".stg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "staga",
+        "scopeName": "source.staga",
+        "path": "./syntaxes/staga.tmLanguage.json"
+      }
+    ]
+  }
+}
