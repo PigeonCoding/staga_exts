@@ -2,7 +2,7 @@
   "name": "staga",
   "displayName": "staga",
   "description": "syntax highlighting for the staga language",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.97.0"
   },
